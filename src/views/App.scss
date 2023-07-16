@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
 
@@ -16,10 +16,10 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -32,7 +32,35 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+.but {
+  text-align: right;
+  margin: 0 10px;
+  cursor: pointer;
+  height: 25px;
+}
+
+.TodoListContent {
+  width: 500px;
+  margin: 0 auto;
+
+  .TodoListChild {
+    height: 60px;
+    border-bottom: solid gray 1px;
+    margin: 10px;
+  }
+}
+
+.AddContent {
+  height: 50px;
+
+  input {
+    height: 20px;
+    width: 300px;
   }
 }
